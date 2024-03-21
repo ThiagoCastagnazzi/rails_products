@@ -1,0 +1,15 @@
+<div>
+  <header class="header">
+    <div class="container"><span class="header_title">Novo Produto</span></div>
+  </header>
+
+  <div class="container">
+    <%= render "form", product: @product %>
+  
+    <br>
+
+      <div class="back_product">
+        <%= link_to "Back to products", products_path %>
+      </div>
+    </div>
+</div>

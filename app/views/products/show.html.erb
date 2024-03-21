@@ -1,0 +1,23 @@
+<div>
+  <header class="header">
+    <div class="container"><span class="header_title">Detalhes do Produto</span></div>
+  </header>
+
+  <p style="color: green"><%= notice %></p>
+
+  <div class="container show_product">
+    <div class="product_edit">
+      <img class="product_img" src="https://lightwidget.com/wp-content/uploads/localhost-file-not-found.jpg" alt="Imagem do Produto" />
+      <%= render @product %>
+    </div>
+
+    <div class="show_product_btn_wrapper">
+      <%= link_to "Edit this product", edit_product_path(@product) %> |
+      <%= link_to "Back to products", products_path %>
+
+      <%= button_to "Destroy this product", @product, method: :delete %>
+    </div>
+  </div>
+
+  
+</div>
